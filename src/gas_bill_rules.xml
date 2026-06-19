@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rule-execution-set>
+   <name>RuleExecutionSet1</name>
+   <description>طريقة احتساب قيمة فاتورة الغاز الطبيعي من خلال 
+       قراءة العداد والتعرف على الشريحة التي ينتمي إليها</description>
+       
+   <rule name="Rule1" description="الشريحة الاولى" >
+	<if leftTerm="gas.bill.Consumption.getConsum" op="&lt;" rightTerm="30.0" />
+	<then method="gas.bill.The_Bill.setThe_chipe" arg1="الشريحة الاولى " />
+   </rule>
+   
+   <rule name="Rule2" description="الشريحة الاولى" >
+	<if leftTerm="gas.bill.Consumption.getConsum" op="=" rightTerm="30.0" />
+	<then method="gas.bill.The_Bill.setThe_chipe" arg1="الشريحة الاولى " />
+   </rule>
+   
+   <rule name="Rule3" description="الشريحة الثانية" >
+	<if leftTerm="gas.bill.Consumption.getConsum" op="&gt;" rightTerm="30.0" />
+        <if leftTerm="gas.bill.Consumption.getConsum" op="&lt;" rightTerm="60.0" />
+	<then method="gas.bill.The_Bill.setThe_chipe" arg1="الشريحة الثانية " />
+   </rule>
+   
+   <rule name="Rule4" description="الشريحة الثانية" >
+	<if leftTerm="gas.bill.Consumption.getConsum" op="=" rightTerm="60.0" />
+	<then method="gas.bill.The_Bill.setThe_chipe" arg1=" الشريحة الثانية" />
+   </rule>
+   
+   <rule name="Rule5" description="الشريحة الثالثة" >
+	<if leftTerm="gas.bill.Consumption.getConsum" op="&gt;" rightTerm="60.0" />
+	<then method="gas.bill.The_Bill.setThe_chipe" arg1=" الشريحة الثالثة" />
+   </rule>
+   </rule-execution-set>
