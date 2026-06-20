@@ -9,7 +9,7 @@ package gas.bill;
 
 /**
  *
- * @author EL FAROUQ
+ * @author AlAA KHALED
  */
 public class The_Bill {
     private String the_chipe;

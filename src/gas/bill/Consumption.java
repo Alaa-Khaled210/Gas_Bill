@@ -7,7 +7,7 @@ package gas.bill;
 
 /**
  *
- * @author EL FAROUQ
+ * @author AlAA KHALED
  */
 import java.util.Scanner;
 

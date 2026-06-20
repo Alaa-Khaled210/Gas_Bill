@@ -7,7 +7,7 @@ package gas.bill;
 
 /**
  *
- * @author EL FAROUQ
+ * @author AlAA KHALED
  */
 public class GasBill {
 
